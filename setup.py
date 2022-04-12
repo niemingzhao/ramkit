@@ -3,11 +3,15 @@
 
 from setuptools import find_packages, setup
 
+with open('README.md', 'r') as f:
+    long_description = f.read()
+
 config = {
     'name': 'ramkit',  # Required
-    'version': '0.0.1',  # Required
+    'version': '0.1.0',  # Required
     'description': 'An analysis kernel for raman spectrum.',  # Required
-    'long_description': """An analysis kernel for raman spectrum.""",
+    'long_description': long_description,
+    'long_description_content_type': 'text/markdown',
     'author': 'Nie Mingzhao',
     'author_email': '1432440963@qq.com',
     'url': 'https://github.com/niemingzhao/ramkit',
